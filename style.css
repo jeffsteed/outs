@@ -1,0 +1,71 @@
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+#header {
+  height: 220px; }
+
+#logo {
+  width: 15%;
+  height: 100%;
+  float: left;
+  margin-left: 1%;
+  background-image: url("http://sobaco.umn.edu/sites/default/files/styles/large/public/videogame.png?itok=KkOkNHzt");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#logo h1 {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 16px;
+  color: aliceblue; }
+
+#navicon {
+  height: 50px;
+  width: 50px;
+  float: right;
+  text-align: center;
+  margin-top: 2%;
+  color: aliceblue;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#container {
+  margin-top: 2%;
+  height: 550px; }
+
+#leftcol {
+  background-color: aliceblue;
+  background-image: url("https://cdn0.vox-cdn.com/thumbor/pWnES0i3Y27q6BM3yeGYlm2_Edk=/1000x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/4196883/H5-Guardians-Arena-FP-Truth-Flare.0.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 45%;
+  height: 100%;
+  margin-left: 2%; }
+
+#rightcol {
+  background-color: aliceblue;
+  float: right;
+  width: 45%;
+  height: 100%;
+  margin-right: 2%; }
+
+footer {
+  background-color: aliceblue;
+  clear: both;
+  height: 60px; }
+
+/*# sourceMappingURL=style.css.map */
