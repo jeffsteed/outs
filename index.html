@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Quicksand|Righteous|Monda|Comfortaa:400,300,700|Courgette|Fugaz+One|VT323|Megrim' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="script.js">
 
-    </script>
     <title>OUTS</title>
   </head>
   <body>
-    <div id="wrapper">
+    <div class="wrapper">
       <header id="header">
         <img src="http://sobaco.umn.edu/sites/default/files/styles/large/public/videogame.png?itok=KkOkNHzt" id="logo" alt="" />
         <h1>OUTS</h1>
         <div id="navicon"></div>
-        <div id="navpop">
+        <nav class="navpop">
           <ul>
-            <li>Playstation 4</li>
-            <li>X-Box One</li>
-            <li>PC</li>
+            <li><a href="#">Playstation 4</a></li>
+            <li><a href="#">X-Box One</a></li>
+            <li><a href="#">PC</a></li>
           </ul>
-        </div>
+        </nav>
       </header>
       <section id="status-message">
 
       </section>
       <div id="container">
-        <div id="leftcol">
-          <img src="http://www.gamestop.com/common/images/lbox/108668b.jpg" alt="" />
+        <div class="game">
+          <img class="gameimg" src="http://www.gamestop.com/common/images/lbox/108668b.jpg" alt="" />
+          <img class="platformimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Xbox_One_logo.svg/1280px-Xbox_One_logo.svg.png" alt="" />
         </div>
-        <div id="rightcol">
-          <img src="http://ecx.images-amazon.com/images/I/91ITO6Dp-5L._SL1500_.jpg" alt="" />
+        <div class="game">
+          <img class="gameimg" src="http://ecx.images-amazon.com/images/I/91ITO6Dp-5L._SL1500_.jpg" alt="" />
+          <img class="platformimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PlayStation_4_logo_and_wordmark.svg/2000px-PlayStation_4_logo_and_wordmark.svg.png" alt="" />
         </div>
       </div>
       <footer>
@@ -40,5 +40,7 @@
         </p>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

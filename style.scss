@@ -16,10 +16,60 @@ body {
   background-color: white;
 }
 
-#wrapper {
+.wrapper {
   width: 90%;
   // border: $border;
   margin: 0 auto;
+
+  overflow-x: hidden;
+  position: relative;
+  right: 0;
+}
+
+.menu-open {
+  right: 80px;
+}
+
+.menu-open .navpop {
+  right: 0;
+}
+
+.wrapper, .navpop {
+  -webkit-transition: right 300ms ease;
+  -moz-transition: right 300ms ease;
+  transition: right 300ms ease;
+}
+
+.navpop {
+  // margin-top: 2%;
+  // // margin-right: 10px;
+  // width: 150px;
+  // height: 150px;
+  // float: right;
+  // background-color: $color;
+  // border-radius: 10px 0 10px 10px;
+  // display: none; // Change to display: block when navicon is clicked
+
+  background-color: black;
+  color: $color;
+  position: fixed;
+  top: 0;
+  right: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+
+}
+
+.navpop ul {
+  margin: 0;
+  padding: 10px;
+}
+
+.navpop li {
+  list-style: none;
+  padding: 10px;
+  font-weight: bold;
 }
 
 #header {
@@ -46,6 +96,11 @@ header h1 {
   margin-left: 10px;
 }
 
+#navicon:hover {
+  background-color: $color;
+  border-radius: 10px;
+}
+
 #navicon {
   // border: $border;
   height: 50px;
@@ -53,6 +108,7 @@ header h1 {
   float: right;
   margin-top: 2%;
   margin-right: 80px;
+  padding: 5px;
   border-radius: 0 10px 10px 0;
   background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png");
   background-position: center;
@@ -61,75 +117,61 @@ header h1 {
   background-color: white;
 }
 
-#navpop {
-  margin-top: 2%;
-  // margin-right: 10px;
-  width: 150px;
-  height: 150px;
-  float: right;
-  background-color: $color;
-  border-radius: 10px 0 10px 10px;
-  display: none; // Change to display: block when navicon is clicked
+a {
+  text-decoration: none;
+  color: $color;
 }
 
-#navpop ul {
-  margin: 0;
-  padding: 10px;
-}
-
-#navpop li {
-  list-style: none;
-  padding: 10px;
-  font-weight: bold;
+a:hover {
+  font-size: 1.5rem;
 }
 
 #container {
   // border: $border;
-  margin-top: 2%;
+  margin-top: 1%;
   height: 400px;
   background-color: $color;
   border-radius: 10px;
 }
 
-#leftcol {
-  border: $border;
-  background-color: $color;
-  // background-image: url("http://media1.gameinformer.com/imagefeed/screenshots/Halo5Guardians/12.jpg");
-  // background-repeat: no-repeat;
-  // background-position: top;
-  // background-size: cover;
+.game {
+  border-radius: 10px;
+  background-color: aliceblue;
   float: left;
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 250px;
   margin-left: 2%;
   margin-top: 1%;
 }
 
-#leftcol img {
+.gameimg {
+  margin-left: 25px;
+  margin-top: 10px;
   height: 200px;
   width: 150px;
   border-radius: 10px;
 }
 
-#rightcol {
-  border: $border;
-  background-color: $color;
-  // background-image: url("http://static9.cdn.ubi.com/resource/en-US/game/assassins-creed/ac/acs-gi-bg1-new.jpg");
-  // background-repeat: no-repeat;
-  // background-position: top;
-  // background-size: cover;
-  float: left;
-  width: 150px;
-  height: 200px;
-  margin-top: 1%;
-  margin-left: 2%;
+.platformimg {
+  height: 30px;
+  width: 120px;
+  margin-left: 35px;
 }
 
-#rightcol img {
-  height: 200px;
-  width: 150px;
-  border-radius: 10px;
-}
+// #rightcol {
+//   border: $border;
+//   background-color: $color;
+//   // background-image: url("http://static9.cdn.ubi.com/resource/en-US/game/assassins-creed/ac/acs-gi-bg1-new.jpg");
+//   // background-repeat: no-repeat;
+//   // background-position: top;
+//   // background-size: cover;
+//   float: left;
+//   width: 150px;
+//   height: 200px;
+//   margin-top: 1%;
+//   margin-left: 2%;
+// }
+
 
 footer {
   border: $border;
