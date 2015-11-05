@@ -1,9 +1,9 @@
 $bkgColor: aliceblue;
-$color: aliceblue;
+$color: rgb(255, 201, 40);
 $border: 4px solid rgb(255, 201, 40);
 
 // Fonts
-$font: 'Pacifico', cursive;
+$font: 'Megrim', cursive;
 
 html {
   margin: 0;
@@ -31,13 +31,11 @@ body {
 #logo {
   // border: $border;
   // background-color: $bkgColor;
-  width: 15%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   float: left;
   margin-left: 1%;
-  background-image: url("http://sobaco.umn.edu/sites/default/files/styles/large/public/videogame.png?itok=KkOkNHzt");
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-top: 1%;
 }
 
 header h1 {
@@ -53,46 +51,84 @@ header h1 {
   height: 50px;
   width: 50px;
   float: right;
-  text-align: center;
   margin-top: 2%;
   margin-right: 80px;
-  color: $color;
+  border-radius: 0 10px 10px 0;
   background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
+}
+
+#navpop {
+  margin-top: 2%;
+  // margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  float: right;
+  background-color: $color;
+  border-radius: 10px 0 10px 10px;
+  display: none; // Change to display: block when navicon is clicked
+}
+
+#navpop ul {
+  margin: 0;
+  padding: 10px;
+}
+
+#navpop li {
+  list-style: none;
+  padding: 10px;
+  font-weight: bold;
 }
 
 #container {
   // border: $border;
   margin-top: 2%;
-  height: 550px;
+  height: 400px;
+  background-color: $color;
+  border-radius: 10px;
 }
 
 #leftcol {
   border: $border;
-  background-color: $bkgColor;
-  background-image: url("http://media1.gameinformer.com/imagefeed/screenshots/Halo5Guardians/12.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background-color: $color;
+  // background-image: url("http://media1.gameinformer.com/imagefeed/screenshots/Halo5Guardians/12.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top;
+  // background-size: cover;
   float: left;
-  width: 45%;
-  height: 100%;
+  width: 150px;
+  height: 200px;
   margin-left: 2%;
+  margin-top: 1%;
+}
+
+#leftcol img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 #rightcol {
   border: $border;
-  background-color: $bkgColor;
-  background-image: url("http://static9.cdn.ubi.com/resource/en-US/game/assassins-creed/ac/acs-gi-bg1-new.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  float: right;
-  width: 45%;
-  height: 100%;
-  margin-right: 2%;
+  background-color: $color;
+  // background-image: url("http://static9.cdn.ubi.com/resource/en-US/game/assassins-creed/ac/acs-gi-bg1-new.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top;
+  // background-size: cover;
+  float: left;
+  width: 150px;
+  height: 200px;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#rightcol img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 footer {
@@ -101,8 +137,16 @@ footer {
   clear: both;
   margin-top: 2%;
   height: 60px;
+  font-family: $font;
+  border-radius: 10px 10px 0 0;
 }
 
 footer p {
   text-align: center;
+}
+
+#sitename {
+  font-size: 2rem;
+  list-style: none;
+  width: 600px;
 }
