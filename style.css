@@ -8,7 +8,7 @@ body {
   background-color: white; }
 
 .wrapper {
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   overflow-x: hidden;
   position: relative;
@@ -32,8 +32,9 @@ body {
   top: 0;
   right: -231px;
   width: 210px;
-  height: 100%;
-  padding: 10px; }
+  height: 96%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px; }
 
 .navpop ul {
   margin: 0;
@@ -45,7 +46,7 @@ body {
   font-weight: bold; }
 
 #header {
-  height: 220px;
+  height: 200px;
   font-family: "Megrim", cursive; }
 
 #logo {
@@ -66,12 +67,13 @@ header h1 {
   background-color: #ffc928;
   border-radius: 10px; }
 
-#navicon {
+.menuicon {
   height: 50px;
   width: 50px;
   float: right;
   margin-top: 2%;
   margin-right: 80px;
+  transition: margin-right 300ms ease;
   padding: 5px;
   border-radius: 0 10px 10px 0;
   background-image: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png");
@@ -79,6 +81,10 @@ header h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white; }
+
+.clicked {
+  margin-right: 120px;
+  transition: margin-right 300ms ease; }
 
 a {
   text-decoration: none;
@@ -89,7 +95,8 @@ a:hover {
 
 #container {
   margin-top: 1%;
-  height: 400px;
+  width: 100%;
+  height: 280px;
   background-color: #ffc928;
   border-radius: 10px; }
 
@@ -99,7 +106,7 @@ a:hover {
   float: left;
   width: 200px;
   height: 250px;
-  margin-left: 2%;
+  margin-left: 1.8%;
   margin-top: 1%; }
 
 .gameimg {
@@ -109,16 +116,27 @@ a:hover {
   width: 150px;
   border-radius: 10px; }
 
+.gameimg:hover {
+  height: 250px;
+  width: 200px;
+  margin-left: 0;
+  margin-top: 0; }
+
 .platformimg {
-  height: 30px;
+  height: 25px;
   width: 120px;
   margin-left: 35px; }
+
+.pcImg {
+  height: 25px;
+  width: 40px;
+  margin-left: 80px; }
 
 footer {
   border: 4px solid #ffc928;
   background-color: #ffc928;
   clear: both;
-  margin-top: 2%;
+  margin-top: 6%;
   height: 60px;
   font-family: "Megrim", cursive;
   border-radius: 10px 10px 0 0; }
@@ -130,5 +148,11 @@ footer p {
   font-size: 2rem;
   list-style: none;
   width: 600px; }
+
+@media (max-width: 400px) {
+  .game {
+    margin: 0 auto;
+    float: none;
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
